@@ -5,3 +5,4 @@ project(AllTests)
 
 add_subdirectory("Prime/Test")
 add_subdirectory("Vector/Test")
+add_subdirectory("Factorial/Test")
