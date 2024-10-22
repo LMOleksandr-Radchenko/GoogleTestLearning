@@ -11,4 +11,6 @@ set(SOURCE_FILES
     PrimeNumbers.cpp
 )
 
-add_library(PrimeNumbers SHARED ${SOURCE_FILES} ${HEADER_FILES})
+add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES} ${HEADER_FILES})
+
+target_include_directories(${PROJECT_NAME} INTERFACE ${CMAKE_CURRENT_LIST_DIR})
