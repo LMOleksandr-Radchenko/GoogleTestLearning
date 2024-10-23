@@ -8,7 +8,7 @@ set(HEADER_FILES
 )
 
 set(SOURCE_FILES
-Factorial.cpp
+    Factorial.cpp
 )
 
 add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES} ${HEADER_FILES})

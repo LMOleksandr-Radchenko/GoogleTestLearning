@@ -4,7 +4,7 @@ include(../../compilerConfig.cmake)
 project(FactorialTest)
 
 set(SOURCE_FILES
-FactorialTest.cpp
+    FactorialTest.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
