@@ -9,6 +9,8 @@ set(SOURCE_FILES
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
+add_test(NAME ${PROJECT_NAME} COMMAND $<TARGET_FILE:${PROJECT_NAME}>)
+
 find_package(GTest REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE GTest::gtest GTest::gtest_main)
 
